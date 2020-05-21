@@ -1,0 +1,25 @@
+<div class="container proba">
+<!--     <h3>Ajde da vidimo kako i sta</h3>-->
+
+<!--  <button class='btn btn-primary' (click) = "probafija($event)">PROBA</button>-->
+<!--  <p [ngStyle]="{ color: getColor() }">{{ proba }}</p>-->
+
+ <h4> <b>Ime:</b> {{ person.name }}  <br>
+       <b>Prezime:</b> {{ person.surname }} <br>
+       <b>Gender:</b> {{ person.gender}}
+  </h4>
+  <hr>
+  <button class="btn btn-primary" (click) = "trigerEventToParent()" >CLICK TO PASS EVENT TO PARENT</button>
+  <br><br>
+  <button class="btn btn-success" (click)="referenceFunction(myreference)">CLICK TO PASS REFERENCE</button>
+  <label for="proba"></label>
+  <input type="text" id="proba" #myreference>
+  <p class="pInline">{{ reference_passed.value }}</p>
+  <br><br>
+
+  <button class="btn btn-success" (click) = "referencebyView()">CLICK TO PASS REFERENCE BY VIEW</button>
+  <label for="viewreference"></label>
+  <input type="text" id="viewreference" #myviewreference>
+  <hr>
+</div>
+

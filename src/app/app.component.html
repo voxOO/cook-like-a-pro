@@ -1,0 +1,25 @@
+
+
+<app-header (featureSelected) = "onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="loadedFeature === 'recipe' "></app-recipes>
+      <app-shoping-list *ngIf="loadedFeature !== 'recipe' "></app-shoping-list>
+    </div>
+  </div>
+  <hr>
+
+<!--  <app-proba-sve-->
+<!--    class="proba"-->
+<!--    *ngFor="let PersonDetail of PersonDetails" [person]="PersonDetail"-->
+<!--    (eventToPass) = "functionPassed($event)"-->
+<!--     >-->
+<!--  </app-proba-sve>-->
+<!--  <div class="eventFromComponent">-->
+<!--    <h4> {{ poruka }} </h4>-->
+<!--    <h4> {{ naravoucenije }} </h4>-->
+<!--  </div>-->
+</div>
+
+
