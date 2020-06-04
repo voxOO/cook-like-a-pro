@@ -13,6 +13,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ProbaSveComponent } from './proba-sve/proba-sve.component';
 import {DropdownDirective} from "./shared/dropdown.directive";
+import {ShopingListService} from "./shoping-list/shoping-list.service";
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import {DropdownDirective} from "./shared/dropdown.directive";
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ShopingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
