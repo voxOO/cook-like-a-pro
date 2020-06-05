@@ -15,6 +15,7 @@ import { ProbaSveComponent } from './proba-sve/proba-sve.component';
 import {DropdownDirective} from "./shared/dropdown.directive";
 import {ShopingListService} from "./shoping-list/shoping-list.service";
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
     RecipeItemComponent,
     ProbaSveComponent,
     DropdownDirective,
-    RecipeStartComponent
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
