@@ -7,11 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cook-like-a-pro';
-  loadedFeature =  'recipe';
 
-  onNavigate(feature: string) {
-    this.loadedFeature = feature;
-  }
 
 
 
@@ -29,5 +25,4 @@ export class AppComponent {
  //    this.poruka = event.poruka;
  //    this.naravoucenije = event.naravoucenije;
  //  }
-
 }
